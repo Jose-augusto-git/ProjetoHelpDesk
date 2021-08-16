@@ -40,6 +40,7 @@
     if($usuario_autenticado){
         echo 'Usuário autenticado';
         $_SESSION['autenticado'] = 'SIM';
+        header('Location: home.php');
     }else{
         //INFORMA QUE O USUÁRIO OU SENHA ESTA INVALIDO
         //header espera uma string com o destino para ser encaminhado
