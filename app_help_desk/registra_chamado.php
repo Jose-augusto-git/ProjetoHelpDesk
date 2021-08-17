@@ -1,8 +1,10 @@
 <?php 
 
-    echo '<pre>';
+    session_start();
+
+    /*echo '<pre>';
     print_r($_POST);
-    echo '</pre>';
+    echo '</pre>';*/
 
     //aqui trabalha na montagem do texto
     $titulo = str_replace('#', '-',$_POST['titulo']);
@@ -11,10 +13,10 @@
 
     //implode();
 
-    $texto = $titulo .'#' . $categoria .'#'. $descricao .'#'. PHP_EOL;
+    $texto =$_SESSION['id'] .'#' . $titulo .'#' . $categoria .'#'. $descricao .''. PHP_EOL;
 
     //aqui esta abrindo o arquivo
-    $arquivo = fopen('arquivo.hd','a');
+    $arquivo = fopen('../../app_help_desk/arquivo.hd','a');
 
     
     //escrevendo o texto

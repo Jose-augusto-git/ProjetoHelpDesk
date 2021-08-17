@@ -1,0 +1,4 @@
+usar no diretorio           c:/xampp         para segurança dos dados importantes 
+
+ - app_help_desk (será diretório de arquivo e scrpts sigilosos)
+ - htdocs/app_help_desk (diretório público)
